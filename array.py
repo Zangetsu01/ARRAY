@@ -1,5 +1,6 @@
-scores = input("Enter scores separated by spaces: ").split()
-scores = [float(s) for s in scores]
+import sys
+
+scores = [float(x) for x in sys.argv[1:]]
 
 total = sum(scores)
 average = total / len(scores)
